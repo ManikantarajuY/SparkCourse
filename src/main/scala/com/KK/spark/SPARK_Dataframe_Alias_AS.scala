@@ -26,7 +26,7 @@ object SPARK_Dataframe_Alias_AS {
     val table_alias = data.as("Alias_Table")
       .select($"ip_address",$"birthdate".as("DOB"),$"salary")
     table_alias.show(3)
-    
+
   }
 
 }
